@@ -29,21 +29,3 @@ for (const button of document.querySelectorAll("[data-copy]")) {
     setTimeout(() => (label.textContent = "Copy"), 2000);
   });
 }
-
-// Let sections rise into place as they scroll into view.
-const reveals = document.querySelectorAll(".reveal");
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.add("shown");
-        observer.unobserve(entry.target);
-      }
-    },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
-  );
-  reveals.forEach((element) => observer.observe(element));
-} else {
-  reveals.forEach((element) => element.classList.add("shown"));
-}

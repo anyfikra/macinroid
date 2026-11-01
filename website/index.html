@@ -6,8 +6,8 @@
   <title>Macinroid · Android file transfer for Mac</title>
   <meta name="description" content="A native Mac app for moving photos, videos and files between your Mac and an Android phone over USB. Free, signed and notarized, with no drivers to install.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0a0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d14" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/icon.png">
   <link rel="canonical" href="https://anyfikra.github.io/macinroid/">
@@ -23,14 +23,13 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add("js")</script>
   <script src="main.js" defer></script>
 </head>
 <body>
   <header class="nav">
     <div class="wrap">
       <a class="brand" href="#top">
-        <img src="assets/icon.png" width="28" height="28" alt="">
+        <img src="assets/icon.png" width="24" height="24" alt="">
         Macinroid
       </a>
       <nav class="nav-links" aria-label="Sections">
@@ -45,16 +44,17 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <img class="hero-icon" src="assets/icon.png" width="132" height="132" alt="The Macinroid icon: a phone with arrows pointing up and down">
-        <h1>Android files,<br><span class="tint">the Mac way.</span></h1>
-        <p class="lede">
-          Macinroid moves photos, videos and files between your Mac and an Android
-          phone over USB. Plug in your phone, and its storage opens in a window that
-          works the way Finder does.
-        </p>
+        <div class="hero-head">
+          <h1>Android files,<br>the Mac way</h1>
+          <p class="lede">
+            Macinroid moves photos, videos and files between your Mac and an Android
+            phone over USB. Plug in your phone, and its storage opens in a window that
+            works the way Finder does.
+          </p>
+        </div>
         <div class="actions">
           <a class="button" href="https://github.com/anyfikra/macinroid/releases/latest" data-download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
             Download for Mac
           </a>
           <button class="command" type="button" data-copy="brew install --cask anyfikra/tap/macinroid" aria-label="Copy the Homebrew command">
@@ -63,18 +63,16 @@
           </button>
         </div>
         <p class="fineprint"><span data-version>Free</span> · macOS 14 Sonoma or later · Apple silicon and Intel</p>
-      </div>
 
-      <figure class="hero-shot reveal">
-        <picture>
-          <source srcset="assets/browse-dark.png" media="(prefers-color-scheme: dark)">
-          <img class="shot" src="assets/browse-light.png" width="2160" height="1360"
-               alt="Macinroid showing the Camera folder of a Pixel 9 Pro as thumbnails, with the phone's internal storage, SD card and folders in the sidebar">
-        </picture>
-      </figure>
+        <figure class="stage">
+          <picture>
+            <source srcset="assets/browse-dark.png" media="(prefers-color-scheme: dark)">
+            <img class="shot" src="assets/browse-light.png" width="2160" height="1360"
+                 alt="Macinroid showing the Camera folder of a Pixel 9 Pro as thumbnails, with the phone's internal storage, SD card and folders in the sidebar">
+          </picture>
+        </figure>
 
-      <div class="wrap">
-        <ul class="facts reveal">
+        <ul class="facts">
           <li><strong>No drivers</strong><span>Nothing else to install</span></li>
           <li><strong>Native</strong><span>Written in Swift and SwiftUI</span></li>
           <li><strong>Universal</strong><span>Apple silicon and Intel</span></li>
@@ -84,60 +82,60 @@
     </section>
 
     <section id="features">
-      <div class="wrap center reveal">
-        <span class="eyebrow">Features</span>
-        <h2 class="section-title">Everything you know from Finder.<br>Now for your phone.</h2>
-        <p class="section-lede">No new app to learn. Your phone's files appear in a familiar window, and moving them works the way it does everywhere else on your Mac.</p>
-      </div>
-
       <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Features</span>
+          <h2 class="section-title">Everything you know from Finder, now for your phone</h2>
+          <p class="section-lede">No new app to learn. Your phone's files appear in a familiar window, and moving them works the way it does everywhere else on your Mac.</p>
+        </div>
+
         <div class="cards">
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 19V5M4 9l4-4 4 4M16 5v14m-4-4 4 4 4-4"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></svg>
             <h3>Drag and drop</h3>
             <p>Drag photos straight to your desktop, drop files onto the phone, or copy in one and paste in the other.</p>
           </article>
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="9.5" r="1.8"/><path d="m21 16-5-5-9 9"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
             <h3>Thumbnails and Quick Look</h3>
             <p>See your photos and videos as pictures, in list and icon view. Press Space to Quick Look any file on the phone.</p>
           </article>
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"/><path d="M10 7v3m3-3v3m3-3v3"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 16h.01"/><path d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M21.946 12.013H2.054"/><path d="M6 16h.01"/></svg>
             <h3>Storage and SD card</h3>
             <p>Switch between the phone's internal storage and its SD card from the sidebar, with DCIM, Pictures and Download a click away.</p>
           </article>
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0"/><path d="m12 12 4-4"/><path d="M4 16h16"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
             <h3>Space at a glance</h3>
             <p>See how much room is left on the phone as you browse, and find its details under Device Info.</p>
           </article>
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17z" fill="currentColor"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg>
             <h3>Light, dark and Liquid Glass</h3>
             <p>Follows your Mac's appearance, and wears Liquid Glass on macOS 26.</p>
           </article>
-          <article class="card reveal">
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/></svg></div>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/></svg>
             <h3>Made for the keyboard</h3>
             <p>Download, upload, rename, Quick Look and go back and forth with the shortcuts you would expect.</p>
           </article>
         </div>
 
-        <ul class="extras reveal">
-          <li><strong>Drop files on the Dock icon</strong> to copy them to the phone.</li>
-          <li><strong>Two panes, if you like:</strong> show your Mac's files beside the phone's.</li>
-          <li><strong>A notification</strong> when a long transfer has finished.</li>
-          <li><strong>Updates</strong> offered in the app when a new version is out.</li>
+        <ul class="extras">
+          <li><strong>Drop files on the Dock icon</strong> to copy them to the phone</li>
+          <li><strong>Two panes, if you like:</strong> show your Mac's files beside the phone's</li>
+          <li><strong>A notification</strong> when a long transfer has finished</li>
+          <li><strong>Updates</strong> offered in the app when a new version is out</li>
         </ul>
       </div>
     </section>
 
     <section>
       <div class="wrap spotlight">
-        <div class="story reveal">
+        <div class="story">
           <span class="eyebrow">Transfers</span>
-          <h2 class="section-title">Big copies,<br>clearly shown.</h2>
+          <h2 class="section-title">Big copies, clearly shown</h2>
           <p class="section-lede">Send a whole folder of videos and Macinroid counts the files first, so you see how far along the copy really is.</p>
           <ul class="points">
             <li><b>Progress</b><span>Of the whole copy, not one file at a time</span></li>
@@ -145,7 +143,7 @@
             <li><b>Cancel</b><span>Any time, with <kbd>⌘.</kbd></span></li>
           </ul>
         </div>
-        <figure class="reveal">
+        <figure>
           <picture>
             <source srcset="assets/transfer-dark.png" media="(prefers-color-scheme: dark)">
             <img class="shot" src="assets/transfer-light.png" width="1600" height="1007" loading="lazy"
@@ -157,12 +155,12 @@
 
     <section>
       <div class="wrap spotlight flip">
-        <div class="story reveal">
+        <div class="story">
           <span class="eyebrow">Device Info</span>
-          <h2 class="section-title">Know your phone.</h2>
-          <p class="section-lede">The phone's name, maker, software version and serial number, and how full its internal storage and SD card are, in one place. Press <kbd>⌘I</kbd>.</p>
+          <h2 class="section-title">Know your phone</h2>
+          <p class="section-lede">The phone's name, maker, software version and serial number, and how full its internal storage and SD card are, in one place. Press&nbsp;<kbd>⌘I</kbd>.</p>
         </div>
-        <figure class="sheet-shot reveal">
+        <figure class="sheet-shot">
           <picture>
             <source srcset="assets/device-info-dark.png" media="(prefers-color-scheme: dark)">
             <img class="shot" src="assets/device-info-light.png" width="920" height="880" loading="lazy"
@@ -174,85 +172,82 @@
 
     <div class="engine">
       <div class="wrap">
-        <div class="reveal">
+        <div>
           <span class="eyebrow">Under the hood</span>
-          <h2 class="section-title">Built from scratch, in Swift.</h2>
-          <p class="section-lede">
-            Android phones share their files over MTP, the Media Transfer Protocol.
-            Macinroid speaks it itself, through macOS's own USB framework, so there is
-            nothing else to install. It is a native rewrite of
-            <a href="https://github.com/ganeshrvel/openmtp">OpenMTP</a> for the Mac.
-          </p>
+          <h2 class="section-title">Built from scratch, in Swift</h2>
         </div>
-        <ul class="stats reveal">
-          <li><strong>0</strong><span>drivers or helper apps to install</span></li>
-          <li><strong>0</strong><span>bundled libraries: the MTP engine is Swift</span></li>
-          <li><strong>1</strong><span>universal app for Apple silicon and Intel</span></li>
-        </ul>
+        <p class="section-lede">
+          Android phones share their files over MTP, the Media Transfer Protocol.
+          Macinroid speaks it itself, through macOS's own USB framework, so there is
+          nothing else to install. It is a native rewrite of
+          <a href="https://github.com/ganeshrvel/openmtp">OpenMTP</a> for the Mac.
+        </p>
       </div>
     </div>
 
     <section>
-      <div class="wrap center reveal">
-        <span class="eyebrow">Shortcuts</span>
-        <h2 class="section-title">Keep your hands on the keys.</h2>
-      </div>
       <div class="wrap">
-        <ul class="keys reveal">
-          <li><span class="combo"><kbd>⌘</kbd><kbd>D</kbd></span><span>Download</span></li>
-          <li><span class="combo"><kbd>⌘</kbd><kbd>U</kbd></span><span>Upload</span></li>
-          <li><span class="combo"><kbd class="wide">Space</kbd></span><span>Quick Look</span></li>
-          <li><span class="combo"><kbd>⌘</kbd><kbd>C</kbd></span><span>Copy, to paste in Finder</span></li>
-          <li><span class="combo"><kbd>⇧</kbd><kbd>⌘</kbd><kbd>N</kbd></span><span>New folder</span></li>
-          <li><span class="combo"><kbd>⌘</kbd><kbd>↑</kbd></span><span>Enclosing folder</span></li>
-          <li><span class="combo"><kbd>⌘</kbd><kbd>1</kbd></span><span>Icons, or ⌘2 for a list</span></li>
-          <li><span class="combo"><kbd>⇧</kbd><kbd>⌘</kbd><kbd>.</kbd></span><span>Show hidden files</span></li>
+        <div class="head">
+          <span class="eyebrow">Shortcuts</span>
+          <h2 class="section-title">Keep your hands on the keys</h2>
+        </div>
+        <ul class="keys">
+          <li><span>Download</span><span class="combo"><kbd>⌘</kbd><kbd>D</kbd></span></li>
+          <li><span>Upload</span><span class="combo"><kbd>⌘</kbd><kbd>U</kbd></span></li>
+          <li><span>Quick Look</span><span class="combo"><kbd class="wide">Space</kbd></span></li>
+          <li><span>Copy, to paste in Finder</span><span class="combo"><kbd>⌘</kbd><kbd>C</kbd></span></li>
+          <li><span>New folder</span><span class="combo"><kbd>⇧</kbd><kbd>⌘</kbd><kbd>N</kbd></span></li>
+          <li><span>Enclosing folder</span><span class="combo"><kbd>⌘</kbd><kbd>↑</kbd></span></li>
+          <li><span>Icons, or <kbd>⌘2</kbd> for a list</span><span class="combo"><kbd>⌘</kbd><kbd>1</kbd></span></li>
+          <li><span>Show hidden files</span><span class="combo"><kbd>⇧</kbd><kbd>⌘</kbd><kbd>.</kbd></span></li>
         </ul>
-        <p class="keys-note center">Help ▸ Keyboard Shortcuts lists them all.</p>
+        <p class="note">Help ▸ Keyboard Shortcuts lists them all</p>
       </div>
     </section>
 
     <section id="start">
-      <div class="wrap center reveal">
-        <span class="eyebrow">Get started</span>
-        <h2 class="section-title">Connected in a minute.</h2>
-      </div>
       <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Get started</span>
+          <h2 class="section-title">Connected in a minute</h2>
+        </div>
         <ol class="steps">
-          <li class="reveal">
+          <li>
             <h3>Plug in your phone</h3>
             <p>Open Macinroid and connect the phone with a USB cable that carries data. Some cables only charge.</p>
           </li>
-          <li class="reveal">
+          <li>
             <h3>Choose File Transfer</h3>
             <p>Unlock the phone, tap the <em>Charging this device via USB</em> notification, and under <em>Use USB for</em> choose <em>File Transfer</em>.</p>
           </li>
-          <li class="reveal">
+          <li>
             <h3>Allow access</h3>
             <p>If the phone asks <em>Allow access to phone data?</em>, tap <em>Allow</em>. Its storage appears in the window.</p>
           </li>
         </ol>
-        <p class="steps-note">Nothing showing up? <em>Help ▸ Macinroid Help</em> walks through the usual causes.</p>
+        <p class="note">Nothing showing up? <em>Help ▸ Macinroid Help</em> walks through the usual causes</p>
       </div>
     </section>
 
     <section class="closing">
       <div class="wrap">
-        <div class="closing-card reveal">
+        <div class="closing-card">
           <img src="assets/icon.png" width="96" height="96" alt="">
-          <h2 class="section-title">Get Macinroid.</h2>
-          <p class="section-lede" style="margin-inline: auto">Free, for macOS 14 Sonoma or later.</p>
-          <div class="actions">
-            <a class="button" href="https://github.com/anyfikra/macinroid/releases/latest" data-download>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
-              Download for Mac
-            </a>
-            <button class="command" type="button" data-copy="brew install --cask anyfikra/tap/macinroid" aria-label="Copy the Homebrew command">
-              <code><span class="prompt">$ </span>brew install --cask anyfikra/tap/macinroid</code>
-              <span class="copy" aria-live="polite">Copy</span>
-            </button>
+          <div class="closing-copy">
+            <h2 class="section-title">Get Macinroid</h2>
+            <p class="section-lede">Free, for macOS 14 Sonoma or later</p>
+            <div class="actions">
+              <a class="button" href="https://github.com/anyfikra/macinroid/releases/latest" data-download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>
+                Download for Mac
+              </a>
+              <button class="command" type="button" data-copy="brew install --cask anyfikra/tap/macinroid" aria-label="Copy the Homebrew command">
+                <code><span class="prompt">$ </span>brew install --cask anyfikra/tap/macinroid</code>
+                <span class="copy" aria-live="polite">Copy</span>
+              </button>
+            </div>
+            <p class="support">Macinroid is free. If it saves you some time, you can <a href="https://ko-fi.com/anyfikra">buy me a coffee on Ko-fi</a>.</p>
           </div>
-          <p class="support">Macinroid is free. If it saves you some time, you can <a href="https://ko-fi.com/anyfikra">buy me a coffee on Ko-fi</a>.</p>
         </div>
       </div>
     </section>
