@@ -1,7 +1,40 @@
-# Macinroid
+<p align="center">
+    <img src="assets/icon.png" alt="Macinroid icon" width="96" height="96">
+</p>
 
-Macinroid is a native macOS app for moving photos, videos and files between your 
-Mac and an Android phone over USB. It's a port of OpenMTP to Swift and SwiftUI. 
+<h1 align="center">
+    <strong>Macinroid</strong>
+</h1>
+
+<p align="center">
+    Move Files Between Your Mac And Android <img src="assets/icons/usb.svg" alt="" width="16" height="16"> Over USB
+</p>
+
+<div align="center">
+
+[![release](https://img.shields.io/github/v/release/anyfikra/macinroid?color=159660&style=flat-square)](https://github.com/anyfikra/macinroid/releases/latest)
+[![platform](https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square)](#requirements)
+[![homebrew](https://img.shields.io/badge/homebrew-anyfikra%2Ftap-159660?style=flat-square)](#install)
+
+</div>
+
+<div align="center">
+
+[Introduction](#introduction) •
+[Features](#features) •
+[Requirements](#requirements) •
+[Install](#install) •
+[Getting started](#getting-started) •
+[Keyboard shortcuts](#keyboard-shortcuts) •
+[Building from source](#building-from-source) •
+[Known limitations](#known-limitations)
+
+</div>
+
+## Introduction
+
+Macinroid is a native macOS app for moving photos, videos and files between your
+Mac and an Android phone over USB. It's a port of OpenMTP to Swift and SwiftUI.
 
 Plug in your phone and its storage opens in a window that works the way Finder
 does. Drag photos straight to your desktop, drop files onto the phone, or copy
@@ -22,14 +55,13 @@ Macinroid is free. If it saves you some time, you can buy me a coffee on Ko-fi.
 
 ## Features
 
-- Drag and drop files between the two systems
-- Browse the phone's internal storage and SD card from the sidebar.
-- Thumbnails of the phone's photos and videos, in list and icon view.
-- Quick Look any file on the phone with Space.
-- Storage capacity at a glance, and the phone's details under *Device Info*.
-- Light and dark appearance, and Liquid Glass on macOS 26.
-- One universal app for Apple silicon and Intel. No drivers, no extra software.
-
+- <img src="assets/icons/mouse-pointer-click.svg" alt="" width="16" height="16"> **Drag and drop**: Move files between the two systems
+- <img src="assets/icons/hard-drive.svg" alt="" width="16" height="16"> **Storage**: Browse the phone's internal storage and SD card from the sidebar
+- <img src="assets/icons/image.svg" alt="" width="16" height="16"> **Thumbnails**: Previews of the phone's photos and videos, in list and icon view
+- <img src="assets/icons/eye.svg" alt="" width="16" height="16"> **Quick Look**: Preview any file on the phone with Space
+- <img src="assets/icons/gauge.svg" alt="" width="16" height="16"> **Device info**: Storage capacity at a glance, and the phone's details under *Device Info*
+- <img src="assets/icons/sun-moon.svg" alt="" width="16" height="16"> **Appearance**: Light and dark, and Liquid Glass on macOS 26
+- <img src="assets/icons/cpu.svg" alt="" width="16" height="16"> **Universal**: One app for Apple silicon and Intel. No drivers, no extra software
 
 ## Requirements
 
